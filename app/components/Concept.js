@@ -1,18 +1,18 @@
 const concepts = [
   {
     icon: "☕",
-    title: "自家焙煎の一杯",
-    desc: "契約農園から直接仕入れた豆を、店内の焙煎機で毎朝丁寧に焙煎しています。",
+    title: "自家焙煎",
+    desc: "契約農園から仕入れた豆を、店内の焙煎機で毎朝焙煎しています。",
   },
   {
     icon: "🌿",
-    title: "季節を纏う一皿",
-    desc: "旬の野菜や果物を使い、月替わりでメニューを見直す。何度来ても新しい発見があります。",
+    title: "季節のメニュー",
+    desc: "旬の食材を使い、メニューは月替わりで更新しています。",
   },
   {
     icon: "🕰️",
-    title: "時間を忘れる空間",
-    desc: "古民家をリノベーションした店内は、木の温かみと静かな音楽に包まれています。",
+    title: "一軒家の店内",
+    desc: "古民家をリノベーションした店内です。座席数は24席です。",
   },
 ];
 
@@ -22,10 +22,8 @@ export default function Concept() {
       <div className="container">
         <div className="section-head">
           <span className="section-eyebrow">Our Concept</span>
-          <h2 className="section-title">私たちのこだわり</h2>
-          <p className="section-desc">
-            素材・空間・時間、すべてにこだわった Cafe Lumière の三つの約束。
-          </p>
+          <h2 className="section-title">お店について</h2>
+          <p className="section-desc">素材・空間・時間へのこだわりです。</p>
         </div>
         <div className="concept-grid">
           {concepts.map((item) => (

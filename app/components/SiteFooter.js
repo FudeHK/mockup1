@@ -16,6 +16,9 @@ export default function SiteFooter() {
         <p style={{ marginTop: 24 }}>
           &copy; {new Date().getFullYear()} Cafe Lumière. All rights reserved.
         </p>
+        <p className="footer-disclaimer">
+          本サイトはポートフォリオ用の架空店舗です。制作:fude0723@gmail.com
+        </p>
       </div>
     </footer>
   );
