@@ -11,7 +11,7 @@ const SLIDES = [
   { src: "/images/hero-pastry-display.jpg", alt: "焼き菓子のディスプレイ" },
 ];
 
-const INTERVAL_MS = 6000;
+const INTERVAL_MS = 9000;
 
 export default function HeroSlideshow() {
   const [index, setIndex] = useState(0);
@@ -44,6 +44,7 @@ export default function HeroSlideshow() {
           fill
           priority={i === 0}
           sizes="100vw"
+          style={{ "--pan-duration": `${INTERVAL_MS}ms` }}
           className={
             "hero__slide" + (i === index ? " hero__slide--active" : "")
           }

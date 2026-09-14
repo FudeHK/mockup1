@@ -139,16 +139,32 @@ button {
 
 .hero__slide {
   opacity: 0;
+  transform: scale(1.12) translateX(3%);
   transition: opacity 1.8s ease;
 }
 
 .hero__slide--active {
   opacity: 1;
+  animation: heroPan var(--pan-duration, 9000ms) ease-in-out forwards;
+}
+
+@keyframes heroPan {
+  from {
+    transform: scale(1.12) translateX(3%);
+  }
+  to {
+    transform: scale(1.12) translateX(-3%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .hero__slide {
     transition: none;
+    transform: none;
+  }
+
+  .hero__slide--active {
+    animation: none;
   }
 }
 
