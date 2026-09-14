@@ -13,7 +13,7 @@ export default function Access() {
           <ul className="info-list">
             <li>
               <h4>住所</h4>
-              <p>京都府京都市左京区鴨川町1-2-3</p>
+              <p>京都府京都市左京区架空町1-2-3</p>
               <p>京阪「出町柳駅」より徒歩8分</p>
             </li>
             <li>

@@ -5,7 +5,7 @@ export default function SiteFooter() {
         <div className="brand">
           Cafe <span>Lumière</span>
         </div>
-        <p>京都府京都市左京区鴨川町1-2-3 ／ 075-123-4567</p>
+        <p>京都府京都市左京区架空町1-2-3 ／ 075-123-4567</p>
         <div className="footer-links">
           <a href="#concept">こだわり</a>
           <a href="#menu">メニュー</a>
