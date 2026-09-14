@@ -48,6 +48,24 @@ const targets = [
     width: 2400,
   },
   {
+    file: "concept-roasting.jpg",
+    query: "dark roasted coffee beans macro",
+    orientation: "squarish",
+    width: 1200,
+  },
+  {
+    file: "concept-seasonal.jpg",
+    query: "seasonal Japanese vegetables dish",
+    orientation: "squarish",
+    width: 1200,
+  },
+  {
+    file: "concept-interior.jpg",
+    query: "wooden cafe interior armchair warm light",
+    orientation: "squarish",
+    width: 1200,
+  },
+  {
     file: "menu-coffee.jpg",
     query: "latte art coffee cup",
     orientation: "squarish",
