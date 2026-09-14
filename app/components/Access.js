@@ -7,8 +7,14 @@ export default function Access() {
           <p className="section-desc">住所・営業時間・連絡先はこちらです。</p>
         </div>
         <div className="access-grid">
-          <div className="access-map" aria-hidden="true">
-            MAP（Google マップ埋め込み想定エリア）
+          <div className="access-map">
+            <iframe
+              src="https://www.google.com/maps?q=出町柳駅&output=embed"
+              title="出町柳駅 周辺地図"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
           <ul className="info-list">
             <li>

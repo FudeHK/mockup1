@@ -2,19 +2,16 @@ import Image from "next/image";
 
 const concepts = [
   {
-    index: "01",
     image: "/images/concept-roasting.jpg",
     title: "自家焙煎",
     desc: "契約農園から仕入れた豆を、店内の焙煎機で毎朝焙煎しています。",
   },
   {
-    index: "02",
     image: "/images/concept-seasonal.jpg",
     title: "季節のメニュー",
     desc: "旬の食材を使い、メニューは月替わりで更新しています。",
   },
   {
-    index: "03",
     image: "/images/concept-interior.jpg",
     title: "一軒家の店内",
     desc: "古民家をリノベーションした店内です。座席数は24席です。",
@@ -39,7 +36,6 @@ export default function Concept() {
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 860px) 50vw, 33vw"
                 />
-                <span className="concept-card__index">{item.index}</span>
               </div>
               <div className="concept-card__body">
                 <h3>{item.title}</h3>

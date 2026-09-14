@@ -6,7 +6,7 @@ export default function Hero() {
       <HeroSlideshow />
       <div className="hero__overlay" aria-hidden="true" />
       <div className="hero__content">
-        <span className="hero__eyebrow">Since 2018 · Kyoto</span>
+        <span className="hero__eyebrow">2018年開業・京都</span>
         <h1 className="hero__title">
           自家焙煎カフェ
           <br />
