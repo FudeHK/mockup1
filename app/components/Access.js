@@ -3,7 +3,6 @@ export default function Access() {
     <section id="access" className="section">
       <div className="container">
         <div className="section-head">
-          <span className="section-eyebrow">Access</span>
           <h2 className="section-title">アクセス・営業時間</h2>
           <p className="section-desc">住所・営業時間・連絡先はこちらです。</p>
         </div>

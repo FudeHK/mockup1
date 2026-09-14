@@ -27,7 +27,6 @@ export default function ReservationForm() {
     <section id="reservation" className="section section-alt">
       <div className="container">
         <div className="section-head">
-          <span className="section-eyebrow">Reservation</span>
           <h2 className="section-title">ご予約</h2>
           <p className="section-desc">
             下記フォームよりご希望の日時をお送りください。折り返しご連絡いたします。

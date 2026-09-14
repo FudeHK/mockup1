@@ -44,7 +44,6 @@ export default function Menu() {
     <section id="menu" className="section section-alt">
       <div className="container">
         <div className="section-head">
-          <span className="section-eyebrow">Menu</span>
           <h2 className="section-title">メニュー</h2>
           <p className="section-desc">季節ごとに内容を見直しています。</p>
         </div>
