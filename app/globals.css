@@ -139,7 +139,9 @@ button {
 
 .hero__slide {
   opacity: 0;
-  transform: scale(1.12) translateX(3%);
+  /* アクティブ解除時にアニメーションが外れて transform が瞬時に戻るため、
+     ここはアニメーション終了時点(to)の値に合わせて位置の食い違いをなくす */
+  transform: scale(1.12) translateX(-3%);
   transition: opacity 1.8s ease;
 }
 
