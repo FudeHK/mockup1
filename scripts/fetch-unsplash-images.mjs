@@ -21,6 +21,31 @@ const targets = [
     file: "hero-kyoto-machiya.jpg",
     query: "cozy coffee shop interior daytime wood",
     orientation: "landscape",
+    width: 2400,
+  },
+  {
+    file: "hero-seating.jpg",
+    query: "cafe seating counter interior",
+    orientation: "landscape",
+    width: 2400,
+  },
+  {
+    file: "hero-latte-closeup.jpg",
+    query: "latte art close up",
+    orientation: "landscape",
+    width: 2400,
+  },
+  {
+    file: "hero-window-light.jpg",
+    query: "sunlight window table bright morning",
+    orientation: "landscape",
+    width: 2400,
+  },
+  {
+    file: "hero-pastry-display.jpg",
+    query: "bakery pastry display case",
+    orientation: "landscape",
+    width: 2400,
   },
   {
     file: "menu-coffee.jpg",
@@ -83,8 +108,8 @@ async function searchPhoto(query, orientation) {
   return photo;
 }
 
-async function downloadImage(photo, destPath) {
-  const imageUrl = `${photo.urls.raw}&w=1600&q=80&fm=jpg&fit=crop`;
+async function downloadImage(photo, destPath, width = 1600) {
+  const imageUrl = `${photo.urls.raw}&w=${width}&q=80&fm=jpg&fit=crop`;
   const res = await fetch(imageUrl);
   if (!res.ok) {
     throw new Error(`画像のダウンロードに失敗しました: ${res.status}`);
@@ -112,7 +137,7 @@ async function main() {
     console.log(`Fetching "${target.query}" -> ${target.file}`);
     const photo = await searchPhoto(target.query, target.orientation);
     const destPath = path.join(OUT_DIR, target.file);
-    await downloadImage(photo, destPath);
+    await downloadImage(photo, destPath, target.width);
     await pingDownloadLocation(photo);
     credits.push(
       `- ${target.file}: Photo by ${photo.user.name} (${photo.user.links.html}) on Unsplash (${photo.links.html})`
